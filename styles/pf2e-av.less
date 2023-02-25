@@ -1,0 +1,28 @@
+/* handle imports of the initial files */
+@import "overrides.less";
+@import "fonts.less";
+@import "variables.less";
+@import "typography.less";
+@import "blocks.less";
+@import "importer.less";
+/* TODO: Delete templates.less and remove this import before release*/
+@import "templates.less";
+
+
+.pf2e-av {
+
+  &.journal-sheet:not(.minimized) {
+    min-width: 400px;
+    h4.window-title {
+      visibility: hidden;
+    }
+    }
+
+/* Background overrides*/
+  section.window-content {
+    color: black;
+    background: url("./assets/parchment-av.jpg") repeat;
+  }
+}
+
+

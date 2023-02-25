@@ -1,0 +1,55 @@
+/***
+Structural changes to the html of the sheet by way of CSS
+ */
+.pf2e-av {
+  section.journal-entry-content {
+    >.journal-entry-pages {
+      margin: 0 0 0 0.5rem;
+      padding-right: 1rem;
+    }
+  }
+  form {
+    padding: 0px 5px;
+  }
+  form .editor {
+    height: calc(100% - 145px);
+  }
+  form.journal-header {
+  margin: .25rem 0;
+  }
+  .journal-entry-content.flexcol {
+   min-width: 400px
+  }
+
+  .journal-header {
+    margin: .25rem;
+
+    input.title {
+    background:
+            url("./assets/border-left.webp"),
+            url("./assets/border-right.webp"),
+            url("./assets/border-top.webp"),
+            url("./assets/border-bottom.webp"),
+            url("./assets/bg-rust-no-pad.webp");
+    background-repeat: no-repeat, no-repeat, repeat-x, repeat-x, repeat-x;
+    background-position: -10px 0px, calc(100% + 10px) 0px, 100% 10px, 100% 95%, 100% 10px;
+      height: 95px;
+      line-height: 36px;
+      border: none;
+      text-align: center;
+      font-family: var(--h1-font);
+      font-size: 3rem;
+      color: var(--av-green-light);
+      letter-spacing: 0.1rem;
+    }
+
+    h1 {
+      line-height: 100px;
+    }
+
+  }
+  select[name="folder"] {
+    display:none
+  }
+}
+
